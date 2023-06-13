@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 
 const styleLink = document.createElement("link");
@@ -8,4 +8,5 @@ styleLink.href = "https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css
 document.head.appendChild(styleLink);
 require('dotenv').config();
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
