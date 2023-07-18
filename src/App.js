@@ -51,35 +51,47 @@ export default function App() {
               <Link href="https://medium.com/@anton415">medium</Link>
               {' '}
               <Link href="https://twitter.com/anton415226">twitter</Link>
+              {' '}
+              <Link href="https://www.instagram.com/anton415226/">instagram</Link>
           </Container>
         </Box>
         {/* End main unit */}
 
-<Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="194"
-        image={img}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {story.name}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {story.description}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button
-          href={story.url}
-          rel="noopener noreferrer"
-          target="_blank"
-          size="small"
-        >
-          Literotica
-        </Button>
-      </CardActions>
-    </Card>
+        <Container maxWidth="sm">
+          <Typography
+            component="h1"
+            variant="h2"
+            align="center"
+            color="text.primary"
+            gutterBottom
+          >
+            <Card sx={{ maxWidth: 345 }}>
+              <CardMedia
+                component="img"
+                height="194"
+                image={img}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {story.name}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {story.description}
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button
+                  href={story.url}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  size="small"
+                >
+                  Literotica
+                </Button>
+              </CardActions>
+            </Card>
+          </Typography>
+        </Container>
 
       </main>
       <Footer />
