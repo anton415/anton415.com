@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "29667939397459040848",
-    "url": "/static/js/main.29667939.chunk.js"
+    "revision": "b0f41c10d0b23f03ece3",
+    "url": "/static/js/main.b0f41c10.chunk.js"
   },
   {
     "revision": "7ad38d19ef8af4c45cf6",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/static/media/horny-little-kitty.4bc0bd1f.webp"
   },
   {
-    "revision": "873aa5815d90e74a7a02e174b52ab8af",
+    "revision": "0f33aff55f1b634f917dfe0c318aa3ec",
     "url": "/index.html"
   }
 ];
