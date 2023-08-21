@@ -12,14 +12,28 @@ import Link from '@mui/material/Link';
 import Divider from '@mui/material/Divider';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Footer from './Footer';
-import img from './static/images/horny-little-kitty.webp';
+import HornyLittleKittyImg from './static/images/horny-little-kitty.webp';
+import TheBirthOfAPonyGirlImg from './static/images/the-birth-of-a-pony-girl.webp';
 
 const theme = createTheme();
-const story = {
-  name: 'Horny little kitty',
-  url: 'https://literotica.com/s/horny-little-kitty',
-  description: 'A young girl went to a Halloween party in a catsuit where she will show her wild instincts and desire to obey.'
-};
+
+const stories = [
+    {
+        name: 'Horny little kitty',
+        literoticaUrl: 'https://literotica.com/s/horny-little-kitty',
+        mediumUrl: 'https://medium.com/@anton415/horny-little-kitty-63b4f5070565',
+        description: 'A young girl at a Halloween party.',
+        img: HornyLittleKittyImg
+    },
+
+    {
+        name: 'The Birth of a Pony Girl',
+        literoticaUrl: 'https://literotica.com/s/the-birth-of-a-pony-girl',
+        mediumUrl: 'https://medium.com/@anton415/the-birth-of-a-pony-girl-13aa7d757f2e',
+        description: 'Rose overcome shame of sexual desire and become pony girl.',
+        img: TheBirthOfAPonyGirlImg
+    }
+]
 
 
 export default function App() {
@@ -65,31 +79,44 @@ export default function App() {
             color="text.primary"
             gutterBottom
           >
-            <Card sx={{ maxWidth: 345 }}>
-              <CardMedia
-                component="img"
-                height="194"
-                image={img}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {story.name}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {story.description}
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button
-                  href={story.url}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  size="small"
-                >
-                  Literotica
-                </Button>
-              </CardActions>
-            </Card>
+          {stories.map((story) => {
+            return (
+                <Card sx={{ maxWidth: 345 }}>
+                  <CardMedia
+                    component="img"
+                    height="194"
+                    image={story.img}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      {story.name}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {story.description}
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button
+                      href={story.literoticaUrl}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      size="small"
+                    >
+                      Literotica
+                    </Button>
+                    <Button
+                      href={story.mediumUrl}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      size="small"
+                    >
+                      Medium
+                    </Button>
+                  </CardActions>
+                </Card>
+            );
+          })}
+
           </Typography>
         </Container>
 
