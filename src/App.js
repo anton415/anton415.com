@@ -67,6 +67,8 @@ export default function App() {
               <Link href="https://twitter.com/anton415226">twitter</Link>
               {' '}
               <Link href="https://www.instagram.com/anton415226/">instagram</Link>
+              {' '}
+              <Link href="https://www.patreon.com/Anton415226">patreon</Link>
           </Container>
         </Box>
         {/* End main unit */}
