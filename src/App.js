@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -75,17 +76,15 @@ export default function App() {
         </Box>
         {/* End main unit */}
 
-        <Container maxWidth="sm">
-          <Typography
-            component="h1"
-            variant="h2"
-            align="center"
-            color="text.primary"
-            gutterBottom
-          >
-          {stories.map((story) => {
+        <Grid justifyContent="center"
+                alignItems="center"
+                container
+                spacing={{ xs: 2, md: 3 }}
+                columns={{ xs: 4, sm: 8, md: 12 }}>
+          {stories.map((story, index) => {
             return (
-                <Card sx={{ maxWidth: 345 }}>
+              <Grid justifyContent="center" alignItems="center" item key={index}>
+                <Card sx={{ maxWidth: 345, minHeight: 362 }}>
                   <CardMedia
                     component="img"
                     height="194"
@@ -118,12 +117,10 @@ export default function App() {
                     </Button>
                   </CardActions>
                 </Card>
+              </Grid>
             );
           })}
-
-          </Typography>
-        </Container>
-
+        </Grid>
       </main>
       <Footer />
     </ThemeProvider>
