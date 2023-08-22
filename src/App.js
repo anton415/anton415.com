@@ -61,14 +61,16 @@ export default function App() {
             </Typography>
             <Divider />
               <Link href="https://www.literotica.com/stories/memberpage.php?uid=6695609&page=submissions">literotica</Link>
-              {' '}
+              {' | '}
               <Link href="https://medium.com/@anton415">medium</Link>
-              {' '}
+              {' | '}
               <Link href="https://twitter.com/anton415226">twitter</Link>
-              {' '}
+              {' | '}
               <Link href="https://www.instagram.com/anton415226/">instagram</Link>
-              {' '}
+              {' | '}
               <Link href="https://www.patreon.com/Anton415226">patreon</Link>
+              {' | '}
+              <Link href="https://www.goodreads.com/anton415">goodreads</Link>
           </Container>
         </Box>
         {/* End main unit */}
