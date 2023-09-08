@@ -13,6 +13,7 @@ import Link from '@mui/material/Link';
 import Divider from '@mui/material/Divider';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Footer from './Footer';
+import Tabs from './Tabs';
 import HornyLittleKittyImg from './static/images/horny-little-kitty.webp';
 import TheBirthOfAPonyGirlImg from './static/images/the-birth-of-a-pony-girl.webp';
 
@@ -36,7 +37,6 @@ const stories = [
     }
 ]
 
-
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -46,8 +46,7 @@ export default function App() {
         <Box
           sx={{
             bgcolor: 'background.paper',
-            pt: 8,
-            pb: 6,
+            pt: 8
           }}
         >
           <Container maxWidth="sm">
@@ -75,6 +74,8 @@ export default function App() {
           </Container>
         </Box>
         {/* End main unit */}
+
+        <Tabs />
 
         <Grid justifyContent="center"
                 alignItems="center"
