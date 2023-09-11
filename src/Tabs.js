@@ -1,32 +1,66 @@
 import * as React from 'react';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import MaterialTabs from '@mui/material/Tabs';
-import MaterialTab from '@mui/material/Tab';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import BrushIcon from '@mui/icons-material/Brush';
 import Writing from './Writing';
 
-export default function Tabs() {
+interface TabPanelProps {
+  children?: React.ReactNode;
+  index: number;
+  value: number;
+}
 
-const [value, setValue] = React.useState(0);
-
-const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-  setValue(newValue);
-};
+function CustomTabPanel(props: TabPanelProps) {
+  const { children, value, index, ...other } = props;
 
   return (
-    <Box
-      sx={{
-        bgcolor: 'background.paper',
-        p: 6
-      }}
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
     >
-      <MaterialTabs value={value} onChange={handleChange} aria-label="icon label tabs" centered="true">
-        <MaterialTab icon={<AutoStoriesIcon />} label="WRITING">
-          <Writing />
-        </MaterialTab>
-        <MaterialTab icon={<BrushIcon />} label="ART" />
-      </MaterialTabs>
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+function a11yProps(index: number) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
+
+export default function BasicTabs() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    setValue(newValue);
+  };
+
+  return (
+    <Box sx={{ width: '100%' }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered>
+          <Tab icon={<AutoStoriesIcon />} label="writing" {...a11yProps(0)} />
+          <Tab icon={<BrushIcon />} label="drawing" {...a11yProps(1)} />
+        </Tabs>
+      </Box>
+      <CustomTabPanel value={value} index={0}>
+        <Writing />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={1}>
+        Coming soon...
+      </CustomTabPanel>
     </Box>
   );
 }
