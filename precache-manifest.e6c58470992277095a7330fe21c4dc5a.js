@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "fbb7626e99ed657c9228",
-    "url": "/static/js/main.fbb7626e.chunk.js"
+    "revision": "79c407533c730ad803a4",
+    "url": "/static/js/main.79c40753.chunk.js"
   },
   {
     "revision": "5b04d854e1fa10f83c90",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/static/media/the-birth-of-a-pony-girl.b30e2f33.webp"
   },
   {
-    "revision": "e89c86db668a02885be9795d1dc16767",
+    "revision": "602c4215fa6143afdd7694adcdd35e6c",
     "url": "/index.html"
   }
 ];
