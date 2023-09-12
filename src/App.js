@@ -45,6 +45,14 @@ export default function App() {
               <Link href="https://www.patreon.com/Anton415226">patreon</Link>
               {' | '}
               <Link href="https://www.goodreads.com/anton415">goodreads</Link>
+              {' | '}
+              <Link href="https://www.amazon.com/hz/wishlist/ls/319GC3WCQAP6T?ref_=wl_share">amazon</Link>
+              {' | '}
+              <Link href="https://www.reddit.com/user/Limp-Map3167">reddit</Link>
+              {' | '}
+              <Link href="https://subscribestar.adult/anton415">subscribestar</Link>
+              {' | '}
+              <Link href="https://discord.gg/X8W8BPnA7b">discord</Link>
           </Container>
         </Box>
         {/* End main unit */}
