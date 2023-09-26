@@ -7,7 +7,7 @@ import Link from '@mui/material/Link';
 import Divider from '@mui/material/Divider';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Footer from './Footer';
-import Tabs from './Tabs';
+import Drawing from './Drawing';
 
 const theme = createTheme();
 
@@ -34,6 +34,7 @@ export default function App() {
               Anton415 portfolio
             </Typography>
             <Divider />
+            {/*
               <Link href="https://www.literotica.com/stories/memberpage.php?uid=6695609&page=submissions">literotica</Link>
               {' | '}
               <Link href="https://medium.com/@anton415">medium</Link>
@@ -53,11 +54,18 @@ export default function App() {
               <Link href="https://subscribestar.adult/anton415">subscribestar</Link>
               {' | '}
               <Link href="https://discord.gg/X8W8BPnA7b">discord</Link>
+            */}
+              <Typography
+                align="center"
+              >
+                More of my works on <Link href="https://www.instagram.com/anton415226/">Instagram</Link>.
+              </Typography>
           </Container>
         </Box>
         {/* End main unit */}
 
-        <Tabs />
+        {/* <Tabs /> */}
+        <Drawing/>
 
       </main>
       <Footer />
