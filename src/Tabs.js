@@ -3,9 +3,12 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import BrushIcon from '@mui/icons-material/Brush';
-import Writing from './Writing';
+import InfoIcon from '@mui/icons-material/Info';
+import DrawIcon from '@mui/icons-material/Draw';
+import EmailIcon from '@mui/icons-material/Email';
+import About from './About';
+import Drawing from './Drawing';
+import Contact from './Contact';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -41,7 +44,7 @@ function a11yProps(index: number) {
 }
 
 export default function BasicTabs() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(1);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -51,15 +54,19 @@ export default function BasicTabs() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered>
-          <Tab icon={<AutoStoriesIcon />} label="writing" {...a11yProps(0)} />
-          <Tab icon={<BrushIcon />} label="drawing" {...a11yProps(1)} />
+          <Tab icon={<InfoIcon />} label="about" {...a11yProps(0)} />
+          <Tab icon={<DrawIcon />} label="drawings" {...a11yProps(1)} />
+          <Tab icon={<EmailIcon />} label="contact" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        <Writing />
+        <About />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        Coming soon...
+        <Drawing />
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+        <Contact />
       </CustomTabPanel>
     </Box>
   );
