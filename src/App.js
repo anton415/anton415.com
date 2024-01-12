@@ -7,6 +7,7 @@ import Divider from '@mui/material/Divider';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Footer from './Footer';
 import Tabs from './Tabs';
+import Menu from './Menu';
 
 const theme = createTheme();
 
@@ -37,10 +38,14 @@ export default function App() {
         </Box>
         {/* End main unit */}
 
-        <Tabs />
+        <Menu />
+
+        {/* <Tabs /> */}
 
       </main>
-      <Footer />
+
+      {/* <Footer /> */}
+
     </ThemeProvider>
   );
 }

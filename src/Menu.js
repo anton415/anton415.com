@@ -1,16 +1,15 @@
-import * as React from 'react';
-import Typography from '@mui/material/Typography';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
+import React from 'react'
+import { TabPane, Tab } from 'semantic-ui-react'
+import About from './About';
+import Drawing from './Drawing';
+import Contact from './Contact';
 
-export default function Menu() {
-  return (
-    <AppBar position="relative">
-      <Toolbar>
-        <Typography variant="h6" color="inherit" noWrap>
-          Menu
-        </Typography>
-      </Toolbar>
-    </AppBar>
-  );
-}
+const panes = [
+  { menuItem: 'Drawings', render: () => <TabPane><Drawing /></TabPane> },
+  { menuItem: 'About', render: () => <TabPane><About /></TabPane> },
+  { menuItem: 'Contact', render: () => <TabPane><Contact /></TabPane> },
+]
+
+const Menu = () => <Tab panes={panes} />
+
+export default Menu
