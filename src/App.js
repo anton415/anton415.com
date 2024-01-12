@@ -24,13 +24,13 @@ export default function App() {
         >
           <Container maxWidth="sm">
             <Typography
-              component="h1"
-              variant="h2"
+              component="h4"
+              variant="h6"
               align="center"
               color="text.primary"
               gutterBottom
             >
-              Anton's portfolio
+              The Art of Anton Serdyuchenko.
             </Typography>
             <Divider />
           </Container>
