@@ -2,6 +2,10 @@
 Personal website for hobby.
 
 
+This website uses [Vite.js](https://github.com/vitejs/vite).
+It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI v5.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -11,14 +15,10 @@ In the project directory, you can run:
 Rebuild node_modules.
 
 
-### `npm start`
+### `npm run dev`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-
-### `next dev`
-For development.
 
 
 ### `sudo npm run deploy`
@@ -31,9 +31,3 @@ Deploy to GitHub Pages.
 * [React documentation](https://reactjs.org/).
 * [Material UI React](https://mui.com/).
 * [GitHub Pages](https://pages.github.com/).
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
