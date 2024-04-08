@@ -4,12 +4,13 @@
   "private": true,
   "homepage": "https://anton415.com",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 8080",
     "build": "vite build",
-    "serve": "vite preview",
-    "deploy": "gh-pages -b gh-pages -d build"
+    "preview": "vite preview --port 8080",
+    "deploy": "gh-pages -b gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@mui/icons-material": "^5.15.15",
