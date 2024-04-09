@@ -2,6 +2,7 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
 import FirstImg from './static/drawings/1.jpeg';
 import SecondImg from './static/drawings/2.jpeg';
 import ThirdImg from './static/drawings/3.jpeg';
@@ -29,13 +30,15 @@ export default function Art() {
     <Grid container spacing={1}>
       {items.map((item, index) => (
         <Grid item xs={12} sm={4} key={index}>
-          <Card sx={{ maxWidth: 660 }}>
+          <Paper elevation={10}>
+            <Card sx={{ maxWidth: 660 }}>
               <CardMedia
                 component="img"
                 alt="gesture drawing"
                 image={item.image}
               />
-          </Card>
+            </Card>
+          </Paper>
         </Grid>
       ))}
     </Grid>
