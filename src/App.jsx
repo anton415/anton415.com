@@ -4,7 +4,7 @@ import LabTabs from './LabTabs';
 
 export default function App() {
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="md">
       <LabTabs />
     </Container>
   );

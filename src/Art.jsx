@@ -26,7 +26,7 @@ const items = [
 
 export default function Art() {
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={1}>
       {items.map((item, index) => (
         <Grid item xs={12} sm={4} key={index}>
           <Card sx={{ maxWidth: 660 }}>
