@@ -10,7 +10,9 @@ import TimelineOppositeContent, {timelineOppositeContentClasses} from '@mui/lab/
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import MikeMattesiAvatar from './static/images/avatar/MikeMattesi.jpg';
-import ForceBanner from './static/images/banner/forceBanner.png';
+import SmallForceBanner from './static/images/banner/force/small.webp';
+import MediumForceBanner from './static/images/banner/force/medium.webp';
+import LargeForceBanner from './static/images/banner/force/large.png';
 import IconButton from '@mui/material/IconButton';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Card from '@mui/material/Card';
@@ -48,8 +50,30 @@ export default function About() {
                  href="https://www.drawingforce.com" underline="none"
               >
                 <CardMedia
-                  sx={{ height: 140 }}
-                  image={ForceBanner}
+                  sx={{
+                    display: { xs: 'block', sm: 'none' },
+                    '& .MuiDrawer-paper': { boxSizing: 'border-box' },
+                    height: 120
+                  }}
+                  image={SmallForceBanner}
+                  title="FORCE Art Mentorship"
+                />
+                <CardMedia
+                  sx={{
+                    display: { xs: 'none', sm: 'block', md: 'none' },
+                    '& .MuiDrawer-paper': { boxSizing: 'border-box' },
+                    height: 150
+                  }}
+                  image={MediumForceBanner}
+                  title="FORCE Art Mentorship"
+                />
+                <CardMedia
+                  sx={{
+                    display: {  xs: 'none', sm: 'none', sm: 'none', md: 'block' },
+                    '& .MuiDrawer-paper': { boxSizing: 'border-box' },
+                    height: 150
+                  }}
+                  image={LargeForceBanner}
                   title="FORCE Art Mentorship"
                 />
               </Link>
