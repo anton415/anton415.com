@@ -10,6 +10,7 @@ import TimelineOppositeContent, {timelineOppositeContentClasses} from '@mui/lab/
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import MikeMattesiAvatar from './static/images/avatar/MikeMattesi.jpg';
+import AntonSerdyuchenkoAvatar from './static/images/avatar/AntonSerdyuchenko.png';
 import SmallForceBanner from './static/images/banner/force/small.webp';
 import MediumForceBanner from './static/images/banner/force/medium.webp';
 import LargeForceBanner from './static/images/banner/force/large.png';
@@ -101,9 +102,9 @@ export default function About() {
             2023
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot />
+            <Avatar alt="Anton Serdyuchenko" src={AntonSerdyuchenkoAvatar} />
           </TimelineSeparator>
-          <TimelineContent>Self-taught.</TimelineContent>
+          <TimelineContent>Self-study.</TimelineContent>
         </TimelineItem>
       </Timeline>
     </Box>
