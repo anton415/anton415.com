@@ -69,7 +69,7 @@ export default function About() {
                 />
                 <CardMedia
                   sx={{
-                    display: {  xs: 'none', sm: 'none', sm: 'none', md: 'block' },
+                    display: {  xs: 'none', sm: 'none', md: 'block' },
                     '& .MuiDrawer-paper': { boxSizing: 'border-box' },
                     height: 150
                   }}
