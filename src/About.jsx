@@ -7,6 +7,7 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent, {timelineOppositeContentClasses} from '@mui/lab/TimelineOppositeContent';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import MikeMattesiAvatar from './static/images/avatar/MikeMattesi.jpg';
@@ -23,6 +24,18 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 
+const theme = createTheme();
+
+theme.typography.h3 = {
+  fontSize: '1.0rem',
+  [theme.breakpoints.up('sm')]: {
+      fontSize: '1.3rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1.5rem',
+  },
+};
+
 export default function About() {
   return (
     <Box >
@@ -33,7 +46,7 @@ export default function About() {
         sx={{
           [`& .${timelineOppositeContentClasses.root}`]: {
             flex: 0.2,
-          },
+          }
         }}
       >
 
@@ -46,7 +59,7 @@ export default function About() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Card>
+            <Card sx={{ minWidth: 125 }}>
               <Link
                  href="https://www.drawingforce.com" underline="none"
               >
@@ -54,7 +67,7 @@ export default function About() {
                   sx={{
                     display: { xs: 'block', sm: 'none' },
                     '& .MuiDrawer-paper': { boxSizing: 'border-box' },
-                    height: 120
+                    height: 92
                   }}
                   image={SmallForceBanner}
                   title="FORCE Art Mentorship"
@@ -79,15 +92,15 @@ export default function About() {
                 />
               </Link>
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  Drawing FORCE Art Mentorship with Mike Mattesi.
-                </Typography>
+                <ThemeProvider theme={theme}>
+                  <Typography variant="h3">Drawing FORCE Art Mentorship with Mike Mattesi.</Typography>
+                </ThemeProvider>
                 <Typography variant="body2" color="text.secondary">
                   FORCE drawing has helped me develop a deeper and more intuitive understanding of drama and form,
                   and has given me the tools to create incredible works of art.
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Mike Mattesi Instagram Account:
+                  Mike Mattesi Instagram:
                   <IconButton aria-label="instagram" href="https://www.instagram.com/michaelmattesi/">
                     <InstagramIcon />
                   </IconButton>
@@ -104,7 +117,15 @@ export default function About() {
           <TimelineSeparator>
             <Avatar alt="Anton Serdyuchenko" src={AntonSerdyuchenkoAvatar} />
           </TimelineSeparator>
-          <TimelineContent>Self-study.</TimelineContent>
+          <TimelineContent>
+            <Card sx={{ minWidth: 125 }}>
+              <CardContent>
+                <ThemeProvider theme={theme}>
+                  <Typography variant="h3">Self-study.</Typography>
+                </ThemeProvider>
+              </CardContent>
+            </Card>
+          </TimelineContent>
         </TimelineItem>
       </Timeline>
     </Box>
