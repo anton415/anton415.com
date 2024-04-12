@@ -3,6 +3,7 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
+import Skeleton from '@mui/material/Skeleton';
 import FirstImg from './static/drawings/1.jpeg';
 import SecondImg from './static/drawings/2.jpeg';
 import ThirdImg from './static/drawings/3.jpeg';
@@ -25,18 +26,24 @@ const items = [
   {image: NinthImg}
 ];
 
-export default function Art() {
+export default function Art(props) {
+  const { loading = false } = props;
+
   return (
     <Grid container spacing={1}>
-      {items.map((item, index) => (
+      {(loading ? Array.from(new Array(9)) : items).map((item, index) => (
         <Grid item xs={12} sm={4} key={index}>
           <Paper elevation={10}>
             <Card sx={{ maxWidth: 660 }}>
-              <CardMedia
-                component="img"
-                alt="gesture drawing"
-                image={item.image}
-              />
+              {item ? (
+                <CardMedia
+                  component="img"
+                  alt="gesture drawing"
+                  image={item.image}
+                />
+              ) : (
+                <Skeleton variant="rectangular" width={240} height={250} />
+              )}
             </Card>
           </Paper>
         </Grid>
