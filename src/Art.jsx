@@ -4,15 +4,15 @@ import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Skeleton from '@mui/material/Skeleton';
-import FirstImg from './static/drawings/1.jpeg';
-import SecondImg from './static/drawings/2.jpeg';
-import ThirdImg from './static/drawings/3.jpeg';
-import FourthImg from './static/drawings/4.jpeg';
-import FifthImg from './static/drawings/5.jpeg';
-import SixthImg from './static/drawings/6.jpeg';
-import SeventhImg from './static/drawings/7.jpeg';
-import EighthImg from './static/drawings/8.jpeg';
-import NinthImg from './static/drawings/9.jpeg';
+import FirstImg from './static/drawings/1.webp';
+import SecondImg from './static/drawings/2.webp';
+import ThirdImg from './static/drawings/3.webp';
+import FourthImg from './static/drawings/4.webp';
+import FifthImg from './static/drawings/5.webp';
+import SixthImg from './static/drawings/6.webp';
+import SeventhImg from './static/drawings/7.webp';
+import EighthImg from './static/drawings/8.webp';
+import NinthImg from './static/drawings/9.webp';
 
 const items = [
   {image: FirstImg},
