@@ -9,7 +9,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Box from '@mui/material/Box';
-import AntonSerdyuchenkoAvatar from './static/images/avatar/AntonSerdyuchenko.png';
+import AntonSerdyuchenkoMobileAvatar from './static/images/avatar/AntonSerdyuchenko-Mobile.webp';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -22,7 +22,7 @@ root.render(
       <AppBar position="static">
         <Toolbar>
           <Box >
-            <Avatar alt="Anton Serdyuchenko" src={AntonSerdyuchenkoAvatar} />
+            <Avatar alt="Anton Serdyuchenko" src={AntonSerdyuchenkoMobileAvatar} />
           </Box>
           <Box sx={{ flexGrow: 1 }} />
           <Typography alignItems="center" sx={{ flexGrow: 1 }}>
