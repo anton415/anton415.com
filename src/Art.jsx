@@ -45,8 +45,7 @@ export default function Art(props) {
           <Paper elevation={10}>
             <Card
               sx={{
-                maxWidth: 660, display: { xs: 'block', sm: 'none' },
-                '& .MuiDrawer-paper': { boxSizing: 'border-box' }
+                display: { xs: 'block', sm: 'none', md: 'none' }
               }}
             >
               {item ? (
@@ -61,12 +60,12 @@ export default function Art(props) {
             </Card>
             <Card
               sx={{
-                maxWidth: 660, display: { xs: 'none', sm: 'block', md: 'none' },
-                '& .MuiDrawer-paper': { boxSizing: 'border-box' }
+                display: { xs: 'none', sm: 'block', md: 'none' }
               }}
             >
               {item ? (
                 <CardMedia
+                  component="img"
                   image={item.image}
                   title="gesture drawing"
                 />
@@ -76,12 +75,12 @@ export default function Art(props) {
             </Card>
             <Card
               sx={{
-                maxWidth: 660, display: { xs: 'none', sm: 'block', md: 'none' },
-                '& .MuiDrawer-paper': { boxSizing: 'border-box' }
+                display: { xs: 'none', sm: 'none', md: 'block' }
               }}
             >
               {item ? (
                 <CardMedia
+                  component="img"
                   image={item.image}
                   title="gesture drawing"
                 />
