@@ -24,24 +24,24 @@ import EighthImg from './static/drawings/8.webp';
 import NinthImg from './static/drawings/9.webp';
 
 const items = [
-  {image: FirstImg, mobileImage: MobileFirstImg},
-  {image: SecondImg, mobileImage: MobileSecondImg},
-  {image: ThirdImg, mobileImage: MobileThirdImg},
-  {image: FourthImg, mobileImage: MobileFourthImg},
-  {image: FifthImg, mobileImage: MobileFifthImg},
-  {image: SixthImg, mobileImage: MobileSixthImg},
-  {image: SeventhImg, mobileImage: MobileSeventhImg},
-  {image: EighthImg, mobileImage: MobileEighthImg},
-  {image: NinthImg, mobileImage: MobileNinthImg}
+  {image: FirstImg, mobileImage: MobileFirstImg, width: 240, height: 252},
+  {image: SecondImg, mobileImage: MobileSecondImg, width: 240, height: 303},
+  {image: ThirdImg, mobileImage: MobileThirdImg, width: 240, height: 303},
+  {image: FourthImg, mobileImage: MobileFourthImg, width: 240, height: 318},
+  {image: FifthImg, mobileImage: MobileFifthImg, width: 240, height: 332},
+  {image: SixthImg, mobileImage: MobileSixthImg, width: 240, height: 342},
+  {image: SeventhImg, mobileImage: MobileSeventhImg, width: 240, height: 318},
+  {image: EighthImg, mobileImage: MobileEighthImg, width: 240, height: 170},
+  {image: NinthImg, mobileImage: MobileNinthImg, width: 240, height: 289}
 ];
 
 export default function Art(props) {
   const { loading = false } = props;
 
   return (
-    <Grid container spacing={1}>
+    <Grid container spacing={1} justifyContent="center" alignItems="flex-start">
       {(loading ? Array.from(new Array(9)) : items).map((item, index) => (
-        <Grid item xs={12} sm={4} key={index}>
+        <Grid item xs="auto" sm={4} key={index}>
           <Paper elevation={10}>
             <Card
               sx={{
@@ -52,6 +52,7 @@ export default function Art(props) {
                 <CardMedia
                   component="img"
                   image={item.mobileImage}
+                  sx={{  width: item.width, height: item.height }}
                   title="gesture drawing"
                 />
               ) : (
