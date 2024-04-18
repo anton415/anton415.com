@@ -17,6 +17,11 @@ import MediumForceBanner from './static/images/banner/force/medium.webp';
 import LargeForceBanner from './static/images/banner/force/large.png';
 import IconButton from '@mui/material/IconButton';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -100,9 +105,23 @@ export default function About() {
                   and has given me the tools to create incredible works of art.
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Mike Mattesi Instagram:
                   <IconButton aria-label="instagram" href="https://www.instagram.com/michaelmattesi/">
                     <InstagramIcon />
+                  </IconButton>
+                  <IconButton aria-label="facebook" href="https://www.facebook.com/pages/DrawingForcecom-with-Michael-Mattesi/">
+                    <FacebookIcon />
+                  </IconButton>
+                  <IconButton aria-label="x" href="https://twitter.com/michaelmattesi">
+                    <XIcon />
+                  </IconButton>
+                  <IconButton aria-label="linkedin" href="https://www.linkedin.com/in/mike-mattesi-b39b475/">
+                    <LinkedInIcon />
+                  </IconButton>
+                  <IconButton aria-label="pinterest" href="https://www.pinterest.com/michaelmattesi/">
+                    <PinterestIcon />
+                  </IconButton>
+                  <IconButton aria-label="youtube" href="https://www.youtube.com/user/drawingforce">
+                    <YouTubeIcon />
                   </IconButton>
                 </Typography>
               </CardContent>
