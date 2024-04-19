@@ -35,7 +35,7 @@ const items = [
   {image: NinthImg, mobileImage: MobileNinthImg, width: 240, height: 289}
 ];
 
-export default function Art(props) {
+export default function Works(props) {
   const { loading = false } = props;
 
   return (
