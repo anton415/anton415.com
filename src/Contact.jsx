@@ -15,6 +15,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import Divider from '@mui/material/Divider';
 import ListItemButton from '@mui/material/ListItemButton';
+import CaraIcon from './static/icons/cara-icon.png';
 
 export default function Contact() {
   return (
@@ -24,7 +25,7 @@ export default function Contact() {
           <ListItemAvatar>
             <Avatar
               alt="Cara"
-              src="./src/static/icons/cara-icon.png"
+              src={CaraIcon}
             />
           </ListItemAvatar>
           <ListItemText primary="Cara" secondary="My portfolio." />
