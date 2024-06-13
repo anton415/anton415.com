@@ -20,6 +20,15 @@ export default function Contact() {
   return (
     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
       <ListItem disablePadding>
+        <ListItemButton component="a" href="https://cara.app/anton415/">
+          <ListItemAvatar>
+            <Avatar alt="Cara" src="./static/icons/cara-icon.png" />
+          </ListItemAvatar>
+          <ListItemText primary="Cara" secondary="My portfolio." />
+        </ListItemButton>
+      </ListItem>
+      <Divider />
+      <ListItem disablePadding>
         <ListItemButton component="a" href="https://www.instagram.com/anton415226/">
           <ListItemAvatar>
             <Avatar>
