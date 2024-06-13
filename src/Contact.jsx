@@ -22,7 +22,10 @@ export default function Contact() {
       <ListItem disablePadding>
         <ListItemButton component="a" href="https://cara.app/anton415/">
           <ListItemAvatar>
-            <Avatar alt="Cara" src="./static/icons/cara-icon.png" />
+            <Avatar
+              alt="Cara"
+              src="./src/static/icons/cara-icon.png"
+            />
           </ListItemAvatar>
           <ListItemText primary="Cara" secondary="My portfolio." />
         </ListItemButton>
