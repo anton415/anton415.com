@@ -12,7 +12,7 @@ export default function BasicInfo() {
       <Toolbar>
         <Box sx={{ flexGrow: 1 }} />
         <Typography alignItems="center" sx={{ flexGrow: 1 }}>
-          ANTON SERDYUCHENKO ART
+          ANTON415 ART
         </Typography>
       </Toolbar>
     </AppBar>
