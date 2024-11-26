@@ -20,6 +20,9 @@ Rebuild node_modules.
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+### `sudo npm run build`
+
+Build website before deploying to GitHub Pages.
 
 ### `sudo npm run deploy`
 
