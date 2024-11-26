@@ -14,10 +14,24 @@ import ListItemButton from '@mui/material/ListItemButton';
 import PixivIcon from './static/icons/pixiv-logo.png';
 import TwitterIcon from './static/icons/twitter-logo.png';
 import MailIcon from './static/icons/mail-logo.png';
+import InstagramIcon from './static/icons/instagram-logo.png';
+import VkIcon from './static/icons/vk-logo.png';
 
 export default function Contact() {
   return (
     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+    <ListItem disablePadding>
+        <ListItemButton component="a" href="https://www.instagram.com/anton415226/">
+          <ListItemAvatar>
+             <Avatar
+               alt="Instagram"
+               src={InstagramIcon}
+             />
+          </ListItemAvatar>
+          <ListItemText primary="Instagram" secondary="More of my work here." />
+        </ListItemButton>
+      </ListItem>
+      <Divider />
       <ListItem disablePadding>
         <ListItemButton component="a" href="https://www.pixiv.net/en/users/108453050/">
           <ListItemAvatar>
@@ -26,7 +40,7 @@ export default function Contact() {
               src={PixivIcon}
             />
           </ListItemAvatar>
-          <ListItemText primary="Pixiv" secondary="My works." />
+          <ListItemText primary="Pixiv" secondary="My 18+ works." />
         </ListItemButton>
       </ListItem>
       <Divider />
@@ -38,7 +52,19 @@ export default function Contact() {
               src={TwitterIcon}
             />
           </ListItemAvatar>
-          <ListItemText primary="Twitter" secondary="News." />
+          <ListItemText primary="Twitter" secondary="News, my works and funny posts." />
+        </ListItemButton>
+      </ListItem>
+      <Divider />
+      <ListItem disablePadding>
+        <ListItemButton component="a" href="https://vk.com/anton415/">
+          <ListItemAvatar>
+            <Avatar
+              alt="VK"
+              src={VkIcon}
+            />
+          </ListItemAvatar>
+          <ListItemText primary="VK" secondary="Russian social media with my works." />
         </ListItemButton>
       </ListItem>
       <Divider />

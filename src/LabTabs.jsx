@@ -21,12 +21,12 @@ export default function LabTabs() {
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
           <TabList centered onChange={handleChange} aria-label="lab API tabs example">
             <Tab label="Works" value="1" />
-{/*             <Tab label="About" value="2" /> */}
+             <Tab label="About" value="2" />
             <Tab label="Contact" value="3" />
           </TabList>
         </Box>
         <TabPanel value="1"><Works/></TabPanel>
-{/*         <TabPanel value="2"><About/></TabPanel> */}
+         <TabPanel value="2"><About/></TabPanel>
         <TabPanel value="3"><Contact/></TabPanel>
       </TabContext>
     </Box>
