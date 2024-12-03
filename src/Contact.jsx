@@ -32,18 +32,20 @@ export default function Contact() {
         </ListItemButton>
       </ListItem>
       <Divider />
-      <ListItem disablePadding>
-        <ListItemButton component="a" href="https://www.pixiv.net/en/users/108453050/">
-          <ListItemAvatar>
-            <Avatar
-              alt="Pixiv"
-              src={PixivIcon}
-            />
-          </ListItemAvatar>
-          <ListItemText primary="Pixiv" secondary="My 18+ works." />
-        </ListItemButton>
-      </ListItem>
-      <Divider />
+
+{/*       <ListItem disablePadding> */}
+{/*         <ListItemButton component="a" href="https://www.pixiv.net/en/users/108453050/"> */}
+{/*           <ListItemAvatar> */}
+{/*             <Avatar */}
+{/*               alt="Pixiv" */}
+{/*               src={PixivIcon} */}
+{/*             /> */}
+{/*           </ListItemAvatar> */}
+{/*           <ListItemText primary="Pixiv" secondary="My 18+ works." /> */}
+{/*         </ListItemButton> */}
+{/*       </ListItem> */}
+{/*       <Divider /> */}
+
       <ListItem disablePadding>
         <ListItemButton component="a" href="https://x.com/anton415226/">
           <ListItemAvatar>
