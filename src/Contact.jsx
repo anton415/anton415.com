@@ -16,6 +16,7 @@ import TwitterIcon from './static/icons/twitter-logo.png';
 import MailIcon from './static/icons/mail-logo.png';
 import InstagramIcon from './static/icons/instagram-logo.png';
 import VkIcon from './static/icons/vk-logo.png';
+import CaraIcon from './static/icons/cara-logo.png';
 
 export default function Contact() {
   return (
@@ -33,19 +34,6 @@ export default function Contact() {
       </ListItem>
       <Divider />
 
-{/*       <ListItem disablePadding> */}
-{/*         <ListItemButton component="a" href="https://www.pixiv.net/en/users/108453050/"> */}
-{/*           <ListItemAvatar> */}
-{/*             <Avatar */}
-{/*               alt="Pixiv" */}
-{/*               src={PixivIcon} */}
-{/*             /> */}
-{/*           </ListItemAvatar> */}
-{/*           <ListItemText primary="Pixiv" secondary="My 18+ works." /> */}
-{/*         </ListItemButton> */}
-{/*       </ListItem> */}
-{/*       <Divider /> */}
-
       <ListItem disablePadding>
         <ListItemButton component="a" href="https://x.com/anton415226/">
           <ListItemAvatar>
@@ -58,6 +46,7 @@ export default function Contact() {
         </ListItemButton>
       </ListItem>
       <Divider />
+
       <ListItem disablePadding>
         <ListItemButton component="a" href="https://vk.com/anton415/">
           <ListItemAvatar>
@@ -70,6 +59,33 @@ export default function Contact() {
         </ListItemButton>
       </ListItem>
       <Divider />
+
+      <ListItem disablePadding>
+        <ListItemButton component="a" href="https://www.pixiv.net/en/users/108453050/">
+        <ListItemAvatar>
+          <Avatar
+            alt="Pixiv"
+            src={PixivIcon}
+          />
+        </ListItemAvatar>
+        <ListItemText primary="Pixiv" secondary="My works and also some 18+ drawings." />
+        </ListItemButton>
+      </ListItem>
+      <Divider />
+
+      <ListItem disablePadding>
+        <ListItemButton component="a" href="https://cara.app/anton415">
+          <ListItemAvatar>
+            <Avatar
+              alt="Cara"
+              src={CaraIcon}
+            />
+          </ListItemAvatar>
+          <ListItemText primary="Cara" secondary="There is so many social platforms :)" />
+        </ListItemButton>
+      </ListItem>
+      <Divider />
+
       <ListItem disablePadding>
         <ListItemButton component="a" href="mailto:anton415@gmail.com">
           <ListItemAvatar>
